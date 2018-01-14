@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <ScrollView
+        android:id="@+id/svPE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.cergi.ruralbanking.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_marginPercent="10%"
+            app:layout_widthPercent="70%">
+
+            <TextView
+                android:id="@+id/tvPE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/textview"
+                android:gravity="center_horizontal"
+                android:text="@string/photo_empreintes"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffad18"
+                android:textStyle="bold"
+                app:layout_widthPercent="70%" />
+
+            <GridLayout
+                android:id="@+id/GridInfoDigit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="2"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical"
+                    android:layout_row="0"
+                    android:layout_rowSpan="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Matricule"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/LName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/FName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/imgPreview"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/pad_20dp"
+                    android:layout_row="0"
+                    android:layout_rowSpan="2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_img" />
+
+                <TextView
+                    android:id="@+id/scannerGauche"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_row="3"
+                    android:text="@string/scannerGauche"
+                    android:textAllCaps="true"
+                    android:textColor="#2f6699"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_widthPercent="70%" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_row="4"
+                    android:orientation="horizontal">
+
+                    <!-- Pouce -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/pad_10dp">
+
+                        <ImageButton
+                            android:id="@+id/gauche_po"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtGpo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pouce" />
+                    </LinearLayout>
+
+                    <!-- Index -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/pad_10dp">
+
+                        <ImageButton
+                            android:id="@+id/gauche_in"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtGin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Index" />
+                    </LinearLayout>
+
+                    <!-- Majeur -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/pad_10dp">
+
+                        <ImageButton
+                            android:id="@+id/gauche_ma"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtGma"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Majeur" />
+                    </LinearLayout>
+
+                    <!-- Annulaire -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/pad_10dp">
+
+                        <ImageButton
+                            android:id="@+id/gauche_an"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtGan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Annulaire" />
+                    </LinearLayout>
+
+                    <!-- Auriculaire -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/gauche_au"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtGau"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Auriculaire" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/scannerDroite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_row="5"
+                    android:text="@string/scannerDroite"
+                    android:textAllCaps="true"
+                    android:textColor="#2f6699"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_widthPercent="70%" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_row="6"
+                    android:orientation="horizontal">
+
+                    <!-- Pouce -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/pad_10dp">
+
+                        <ImageButton
+                            android:id="@+id/droite_po"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtDpo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pouce" />
+                    </LinearLayout>
+
+                    <!-- Index -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/pad_10dp">
+
+                        <ImageButton
+                            android:id="@+id/droite_in"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtDin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Index" />
+                    </LinearLayout>
+
+                    <!-- Majeur -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/pad_10dp">
+
+                        <ImageButton
+                            android:id="@+id/droite_ma"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtDma"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Majeur" />
+                    </LinearLayout>
+
+                    <!-- Annulaire -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/pad_10dp">
+
+                        <ImageButton
+                            android:id="@+id/droite_an"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtDan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Annulaire" />
+                    </LinearLayout>
+
+                    <!-- Auriculaire -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/droite_au"
+                            android:layout_width="52dp"
+                            android:layout_height="64dp" />
+
+                        <TextView
+                            android:id="@+id/txtDau"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Auriculaire" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_row="9"
+                    android:text="@string/text" />
+            </GridLayout>
+        </com.cergi.ruralbanking.PercentLinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/send"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/button_green"
+        android:text="@string/send"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/svPE"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="40%"/>
+</android.support.percent.PercentRelativeLayout>

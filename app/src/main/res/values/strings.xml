@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">RuralBanking</string>
+    <string name="action_settings">Parametres</string>
+    <string name="title">Rural Banking Manager</string>
+    <string name="accueil">Accueil</string>
+    <string name="open_account">Ouverture de compte</string>
+    <string name="search">Rechercher client</string>
+    <string name="versement">Versement</string>
+    <string name="retrait">Retrait</string>
+    <string name="versement_esp">Versement espèces</string>
+    <string name="retrait_esp">Retrait espèces</string>
+    <string name="demande_credit">Demande de crédit</string>
+    <string name="money_transfer">Transfert d\'argent</string>
+
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="copyright" translatable="false">© 2016 CERGI Banking Services</string>
+
+    <string name="menu_activer_bluetooth">Connexion (Bluetooth)</string>
+    <string name="menu_disconnect">Déconnexion</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="scannerGauche">main gauche</string>
+    <string name="scannerDroite">main droite</string>
+    <string name="scannerDoigt">Empreinte digitale</string>
+    <string name="send">Enregistrer</string>
+
+    <string name="connect">Connexion</string>
+    <string name="cancel">Annuler</string>
+    <string name="exit">Quitter</string>
+
+    <string name="text"> </string>
+    <string name="connection_success">connexion réussie </string>
+    <string name="connection_fail">Échec de la connexion </string>
+    <string name="connection_lost">Connexion perdue </string>
+    <!-- BluetoothChat -->
+    <string name="enable_bluetooth">Bluetooth activé</string>
+    <string name="disable_bluetooth">Bluetooth désactivé </string>
+    <string name="no_bluetooth">L appareil ne prend pas en charge Bluetooth </string>
+    <string name="connecting_bluetooth">Connexion, veuillez patienter ...... .</string>
+    <string name="connect_bluetooth">connexion Bluetooth</string>
+    <string name="scanning">Recherche de périphériques Bluetooth ... </string>
+    <string name="select_bluetooth_device">S\' il vous plaît connecter des périphériques</string>
+    <string name="button_scan">équipements de numérisation </string>
+    <string name="title_paired_devices">Les appareils liés</string>
+    <string name="title_other_devices">autre équipement </string>
+    <string name="select_device">Sélectionnez un périphérique Bluetooth </string>
+    <string name="none_paired">Aucun dispositif jumelé </string>
+    <string name="none_found">Pas de périphériques Bluetooth</string>
+    <string name="processing">Traitement en cours ... </string>
+    <string name="generate_char_fail">Générer valeurs propres échoué! </string>
+    <string name="reg_model_success">Réussite de matrice synthétique! </string>
+    <string name="reg_model_fail">Matrice synthétique a échoué! </string>
+    <string name="register_success">L enregistrement est réussi!</string>
+    <string name="register_fail">L enregistrement a échoué! </string>
+    <string name="verifying_wait">Vérification, veuillez patienter ... </string>
+    <string name="down_char_fail">L authentification a échoué </string>
+    <string name="verifying_through">Vérifié par </string>
+    <string name="verifying_fail">L authentification a échoué</string>
+    <string name="print_finger_again">Analyser l empreinte digitale de nouveau! </string>
+    <string name="print_finger_droite">Veuillez analyser un doigt de la main DROITE</string>
+    <string name="print_finger_gauche">Veuillez analyser un doigt de la main GAUCHE</string>
+    <string name="print_finger_gauche_123">Veuillez analyser un doigt de la main 123</string>
+    <string name="print_finger">Veuillez analyser un doigt svp</string>
+    <string name="register_fingerprint">Inscrivez empreintes digitales </string>
+    <string name="validate_fingerprint">Vérification des empreintes digitales</string>
+    <string name="first_register">Veuillez enregistrer des empreintes! </string>
+    <string name="empty_field">Veuillez renseigner ce champ</string>
+
+    <string-array name="type_piece">
+        <item>AUTRES</item>
+        <item>CARTE NATIONALE D\'IDENTITE</item>
+        <item>PASSEPORT</item>
+    </string-array>
+
+    <string-array name="type_operateur">
+        <item>WESTERN UNION</item>
+        <item>MONEY GRAM</item>
+        <item>RIA</item>
+        <item>Wari</item>
+    </string-array>
+
+    <string-array name="type_credit">
+        <item>Avance</item>
+        <item>Prêt</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string name="rechercher">Rechercher</string>
+    <string name="params">Params</string>
+    <string name="logout">Déconnexion</string>
+
+    <string name="drawer_open" translatable="false">open</string>
+    <string name="drawer_close" translatable="false">close</string>
+
+    <string-array name="menu_items">
+        <item>Accueil</item>
+        <item>Ouverture de compte</item>
+        <item>Versement</item>
+        <item>Retrait</item>
+        <item>Transfert d\'argent</item>
+        <item>Demande de crédit</item>
+        <item>Déconnexion</item>
+    </string-array>
+
+    <string name="nav_home">Accueil</string>
+    <string name="nav_newacc">Ouverture de compte</string>
+    <string name="nav_vers">Versement</string>
+    <string name="nav_retr">Retrait</string>
+    <string name="nav_transf">Transfert d\'argent</string>
+    <string name="nav_cred">Demande de crédit</string>
+    <string name="nav_out">Déconnexion</string>
+    <string name="nom">NOM</string>
+    <string name="civilite">CIVILITÉ</string>
+    <string name="infos_pers">INFOS. PERSONNELLES</string>
+    <string name="prenom">PRÉNOM(S)</string>
+    <string name="date_naiss">DATE DE NAISSANCE (JJ/MM/AAAA)</string>
+    <string name="lieu_naiss">LIEU DE NAISSANCE</string>
+    <string name="national">NATIONALITÉ</string>
+    <string name="filiation">FILIATION</string>
+    <string name="pere">LE PÈRE</string>
+    <string name="mere">LA MÈRE</string>
+    <string name="adresse">ADRESSE</string>
+    <string name="pays_resid">PAYS DE RÉSIDENCE</string>
+    <string name="ville_resid">VILLE DE RÉSIDENCE</string>
+    <string name="tel">TÉLÉPHONE</string>
+    <string name="email">E-MAIL</string>
+    <string name="autres">AUTRES</string>
+    <string name="activite">ACTIVITÉ</string>
+    <string name="profession">PROFESSION</string>
+    <string name="sit_matrim">SITUATION MATRIMONIALE</string>
+    <string name="nature_piece_id">NATURE PIECE ID</string>
+    <string name="ref">RÉFÉRENCE</string>
+    <string name="deliv_le">DÉLIVRÉ LE</string>
+    <string name="deliv_par">DÉLIVRÉ PAR</string>
+    <string name="enreg">ENREGISTRER</string>
+    <string name="photo_empreintes">PHOTO ET EMPREINTES</string>
+</resources>

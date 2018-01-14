@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/tool_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radialback">
+
+            <com.cergi.ruralbanking.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_marginPercent="15%"
+                app:layout_widthPercent="75%">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%">
+
+                    <EditText
+                        android:id="@+id/txtNumDepot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:hint="DEPOT NUMERO"
+                        android:inputType="number|none"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:textCursorDrawable="@null"
+                        android:textStyle="bold" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%">
+
+                    <EditText
+                        android:id="@+id/txtNumCpteClient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:hint="NUM. CPTE"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:textCursorDrawable="@null"
+                        android:textStyle="bold" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/fingerClient"
+                        android:layout_width="50dp"
+                        android:layout_height="47dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="50dp"
+                        android:contentDescription="img"
+                        android:src="@drawable/ic_fprint" />
+
+                    <ImageView
+                        android:id="@+id/imgClient"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="img"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/default_img" />
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%">
+
+                    <EditText
+                        android:id="@+id/txtNomClient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:hint="NOM CLIENT"
+                        android:inputType="none"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:textCursorDrawable="@null"
+                        android:textStyle="bold" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.cergi.ruralbanking.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    app:layout_widthPercent="75%">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_widthPercent="60%">
+
+                        <EditText
+                            android:id="@+id/txtMttDemande"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:hint="MONTANT DEMANDÉ"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:textCursorDrawable="@null"
+                            android:textStyle="bold" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/spinnerDeviseMtD"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_widthPercent="40%" />
+                </com.cergi.ruralbanking.PercentLinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TYPE D&apos;ENGAGEMENT"
+                    android:textStyle="bold"
+                    app:layout_widthPercent="75%" />
+
+                <Spinner
+                    android:id="@+id/spinnerTypeCredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OBJET"
+                    android:textStyle="bold"
+                    app:layout_widthPercent="75%" />
+
+                <Spinner
+                    android:id="@+id/spinnerObjet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOCALITÉ"
+                    android:textStyle="bold"
+                    app:layout_widthPercent="75%" />
+
+                <Spinner
+                    android:id="@+id/spinnerLocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SECTEUR D&apos;ACTIVITÉ"
+                    android:textStyle="bold"
+                    app:layout_widthPercent="75%" />
+
+                <Spinner
+                    android:id="@+id/spinnerSectAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PÉRIODICITÉ"
+                    android:textStyle="bold"
+                    app:layout_widthPercent="75%" />
+
+                <Spinner
+                    android:id="@+id/spinnerPeriode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%">
+
+                    <EditText
+                        android:id="@+id/txtDuree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:hint="DURÉE"
+                        android:inputType="number"
+                        android:padding="5dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%">
+
+                    <EditText
+                        android:id="@+id/txtDateVisite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:hint="DATE VISITE"
+                        android:inputType="date|none"
+                        android:padding="5dp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    app:layout_widthPercent="75%">
+
+                    <EditText
+                        android:id="@+id/txtComments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:hint="COMMENTAIRES"
+                        android:inputType="text|textMultiLine"
+                        android:padding="5dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.cergi.ruralbanking.PercentLinearLayout
+                    style="?android:attr/buttonBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnValidateDemande"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_green"
+                        android:text="Valider"
+                        android:textColor="#ffffff"
+                        app:layout_widthPercent="25%"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/btnCancelDemande"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/button_red"
+                        android:text="Annuler"
+                        android:textColor="#ffffff"
+                        app:layout_widthPercent="25%"
+                        tools:ignore="HardcodedText" />
+                </com.cergi.ruralbanking.PercentLinearLayout>
+            </com.cergi.ruralbanking.PercentLinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

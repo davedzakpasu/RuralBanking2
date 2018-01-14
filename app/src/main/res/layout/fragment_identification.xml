@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radialback">
+
+        <com.cergi.ruralbanking.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_marginPercent="10%"
+            app:layout_widthPercent="75%">
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/textview"
+                android:gravity="center_horizontal"
+                android:text="@string/infos_pers"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffad18"
+                android:textStyle="bold"
+                app:layout_widthPercent="70%"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/civilite"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <Spinner
+                android:id="@+id/spinnerStatut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:enabled="true"
+                app:layout_widthPercent="75%"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtNom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                    android:hint="@string/nom"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtPrenoms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                    android:hint="@string/prenom"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtDateNaiss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="@string/date_naiss"
+                    android:inputType="date"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtLieuNaiss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                    android:hint="@string/lieu_naiss"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/national"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <Spinner
+                android:id="@+id/spinnerNation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:layout_widthPercent="75%" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/textview"
+                android:gravity="center_horizontal"
+                android:text="@string/filiation"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffad18"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/pere"
+                android:textColor="#2f6699"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtNomPere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                    android:hint="@string/nom"
+                    android:inputType="textCapWords|textPersonName"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtPrenomPere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="@string/prenom"
+                    android:inputType="textCapWords|textPersonName"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtNaissPere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="@string/date_naiss"
+                    android:inputType="date"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/mere"
+                android:textColor="#2f6699"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtNomMere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nom"
+                    android:background="@drawable/edittext"
+                    android:inputType="textCapWords|textPersonName"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtPrenomMere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prenom"
+                    android:background="@drawable/edittext"
+                    android:inputType="textCapWords|textPersonName"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtNaissMere"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/date_naiss"
+                    android:background="@drawable/edittext"
+                    android:inputType="date"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+        </com.cergi.ruralbanking.PercentLinearLayout>
+
+    </ScrollView>
+</android.support.percent.PercentRelativeLayout>

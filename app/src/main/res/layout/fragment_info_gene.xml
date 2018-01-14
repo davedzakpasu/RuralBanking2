@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radialback">
+
+        <com.cergi.ruralbanking.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_marginPercent="10%"
+            app:layout_widthPercent="75%">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/textview"
+                android:gravity="center_horizontal"
+                android:text="@string/adresse"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffad18"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pays_resid"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <Spinner
+                android:id="@+id/spinnerPaysResi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtVilleResi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                    android:hint="@string/ville_resid"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtAdresse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789- "
+                    android:hint="@string/adresse"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="@string/tel"
+                    android:inputType="phone"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/textview"
+                android:gravity="center_horizontal"
+                android:text="@string/autres"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffad18"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activite"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <Spinner
+                android:id="@+id/spinnerActivite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profession"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <Spinner
+                android:id="@+id/spinnerProfession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sit_matrim"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <Spinner
+                android:id="@+id/spinnerSitMatrim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nature_piece_id"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <Spinner
+                android:id="@+id/spinnerNatureID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtRef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-0123456789 "
+                    android:hint="@string/ref"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtDateDeliv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="@string/deliv_le"
+                    android:inputType="date"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtDelivrePar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                    android:hint="@string/deliv_par"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSaveId"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_green"
+                android:text="@string/enreg"
+                android:textColor="#ffffff"
+                app:layout_widthPercent="50%" />
+        </com.cergi.ruralbanking.PercentLinearLayout>
+
+    </ScrollView>
+</android.support.percent.PercentRelativeLayout>

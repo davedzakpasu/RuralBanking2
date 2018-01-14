@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_newacc"
+            android:title="@string/nav_newacc" />
+        <item
+            android:id="@+id/nav_vers"
+            android:title="@string/nav_vers" />
+        <item
+            android:id="@+id/nav_retr"
+            android:title="@string/nav_retr" />
+        <item
+            android:id="@+id/nav_transf"
+            android:title="@string/nav_transf" />
+        <item
+            android:id="@+id/nav_cred"
+            android:title="@string/nav_cred" />
+        <item
+            android:id="@+id/nav_out"
+            android:title="@string/nav_out" />
+    </group>
+
+</menu>

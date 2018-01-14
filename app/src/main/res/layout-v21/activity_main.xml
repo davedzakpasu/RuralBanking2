@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    tools:context=".rbm.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/tool_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radialback">
+
+            <com.cergi.ruralbanking.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnNewAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pad_20dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="@string/open_account"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="75%" />
+
+                <Button
+                    android:id="@+id/btnVersement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pad_20dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="@string/versement"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="75%" />
+
+                <Button
+                    android:id="@+id/btnRetrait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pad_20dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="@string/retrait"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="75%" />
+
+                <Button
+                    android:id="@+id/btnMoneyTransfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pad_20dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="@string/money_transfer"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="75%" />
+
+                <Button
+                    android:id="@+id/btnDemandeDeCredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pad_20dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="@string/demande_credit"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="75%" />
+
+                <Button
+                    android:id="@+id/btnNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/pad_20dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="new main"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="75%" />
+            </com.cergi.ruralbanking.PercentLinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lblauthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:text="@string/copyright" />
+</android.support.percent.PercentRelativeLayout>
+
+

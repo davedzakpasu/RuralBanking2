@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <com.cergi.ruralbanking.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_marginPercent="15%"
+            app:layout_widthPercent="60%">
+
+            <!-- 1ere Ligne -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtRefOperRet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Référence"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+            <!-- 2e Ligne -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtNumCpteRet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="Num. Cpte"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- 3e Ligne -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/finger"
+                    android:layout_width="50dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/ic_fprint" />
+
+                <ImageView
+                    android:id="@+id/imgPreviewR"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_img" />
+            </LinearLayout>
+
+            <!-- 5e Ligne -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="true"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtNomReduitRet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:enabled="false"
+                    android:hint="Nom Client"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+            <!-- 6e Ligne -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtMontantRet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:enabled="false"
+                    android:hint="Montant"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+            <!-- 7e Ligne -->
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_row="6"
+                android:text="IDENTITé DU BéNéFICIAIRE"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffad18"
+                android:textStyle="bold" />
+            <!-- 8e Ligne -->
+
+            <CheckBox
+                android:id="@+id/cbTitulaire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="fill"
+                android:text="Titulaire"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+            <!-- 9e Ligne -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtNomBenefic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                    android:hint="Nom"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+            <!-- 10e Ligne -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtAdresseBen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+                    android:hint="Adresse"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+            <!-- 11e Ligne -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Type Piece"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_widthPercent="60%"/>
+
+            <Spinner
+                android:id="@+id/spinnerTypePiece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginBottom="10dp"
+                android:layout_row="10"
+                android:enabled="true"
+                app:layout_widthPercent="60%"></Spinner>
+            <!-- 12e Ligne -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtDateDeliv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="Date deliv."
+                    android:inputType="date"
+                    android:padding="5dp"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- 14e Ligne -->
+
+            <com.cergi.ruralbanking.PercentLinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_red"
+                    android:padding="10dp"
+                    android:text="Annuler"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="25%" />
+
+                <Button
+                    android:id="@+id/btnValidate"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/button_green"
+                    android:padding="10dp"
+                    android:text="Valider"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="25%" />
+
+            </com.cergi.ruralbanking.PercentLinearLayout>
+        </com.cergi.ruralbanking.PercentLinearLayout>
+
+    </ScrollView>
+</android.support.percent.PercentRelativeLayout>

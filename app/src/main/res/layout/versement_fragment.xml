@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <com.cergi.ruralbanking.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            app:layout_marginPercent="15%"
+            app:layout_widthPercent="60%">
+
+            <!-- 1e Ligne -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtRefOper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:hint="Référence"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+            <!-- 2e Ligne -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtNumCpte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="Num. Cpte"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- <ImageButton -->
+            <!-- android:id="@+id/btnSearch" -->
+            <!-- android:layout_column="1" -->
+            <!-- android:layout_gravity="right" -->
+            <!-- android:layout_marginRight="35dp" -->
+            <!-- android:layout_row="2" -->
+            <!-- android:src="@drawable/ic_action_name" /> -->
+            <!-- 3e Ligne -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/fingerV"
+                    android:layout_width="50dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/ic_fprint" />
+
+                <ImageView
+                    android:id="@+id/imgPreviewV"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_img" />
+            </LinearLayout>
+            <!-- 4e Ligne -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtNomReduit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="Nom Client"
+                    android:padding="5dp"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold"
+                    android:enabled="false"/>
+            </android.support.design.widget.TextInputLayout>
+            <!-- 5e Ligne -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtMontant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="Montant"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold"
+                    android:enabled="false"/>
+            </android.support.design.widget.TextInputLayout>
+            <!-- 6e Ligne -->
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="IDENTITE DU DEPOSANT"
+                android:textAllCaps="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ffad18"
+                android:textStyle="bold" />
+            <!-- 7e Ligne -->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtNomDeposant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="Nom"
+                    android:padding="5dp"
+                    android:textCursorDrawable="@null"
+                    android:textStyle="bold"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+                    android:inputType="textPersonName"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- 8e Ligne -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="60%">
+
+                <EditText
+                    android:id="@+id/txtAdresse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+                    android:hint="Adresse"
+                    android:inputType="textCapWords"
+                    android:textCursorDrawable="@null"
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- 14e Ligne -->
+
+            <com.cergi.ruralbanking.PercentLinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_red"
+                    android:padding="10dp"
+                    android:text="@string/cancel"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="25%" />
+
+                <Button
+                    android:id="@+id/btnValider"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button_green"
+                    android:padding="5dp"
+                    android:text="Valider"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="25%" />
+            </com.cergi.ruralbanking.PercentLinearLayout>
+        </com.cergi.ruralbanking.PercentLinearLayout>
+
+    </ScrollView>
+</android.support.percent.PercentRelativeLayout>

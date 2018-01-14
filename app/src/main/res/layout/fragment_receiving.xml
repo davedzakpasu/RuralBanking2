@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radialback">
+
+        <com.cergi.ruralbanking.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_marginPercent="10%"
+            app:layout_widthPercent="75%">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OPÉRATEUR"
+                android:textStyle="bold"
+                app:layout_widthPercent="70%" />
+
+            <Spinner
+                android:id="@+id/spinnerOpR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:layout_widthPercent="75%" />
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/textview"
+                android:gravity="center_horizontal"
+                android:text="EXPÉDITEUR"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffad18"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtCodeRecep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789- "
+                    android:hint="MTCN"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtNomProv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:enabled="false"
+                    android:hint="NOM"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtPrenomProv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:enabled="false"
+                    android:hint="PRÉNOM(S)"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.cergi.ruralbanking.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                app:layout_widthPercent="75%">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="75%">
+
+                    <EditText
+                        android:id="@+id/txtMontantRecept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:enabled="false"
+                        android:hint="MONTANT"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        app:layout_widthPercent="60%" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/spinnerDeviseMtR"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_widthPercent="40%" />
+            </com.cergi.ruralbanking.PercentLinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAYS"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <Spinner
+                android:id="@+id/spinnerPaysProv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:layout_widthPercent="75%" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/textview"
+                android:gravity="center_horizontal"
+                android:text="BÉNÉFICIAIRE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffad18"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtNomBenef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="NOM"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtPrenomBenef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="PRÉNOM(S)"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtAdressBenef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="ADRESSE"
+                    android:inputType="textMultiLine|textPostalAddress"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtTelBenef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="TÉLÉPHONE"
+                    android:inputType="phone"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtBPBenef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="BOITE POSTALE"
+                    android:inputType="textPostalAddress"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtProfessBenef"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="PROFESSION"
+                    android:inputType="textCapWords"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="MOTIF DE LA RÉCEPTION"
+                android:textStyle="bold"
+                app:layout_widthPercent="75%" />
+
+            <EditText
+                android:id="@+id/txtMotifRecept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:hint="Assistance familiale, Scolarité, Règlement de facture, Frais médicaux,..."
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                app:layout_widthPercent="75%" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtQuestRecept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="QUESTION"
+                    android:inputType="text"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:layout_widthPercent="75%">
+
+                <EditText
+                    android:id="@+id/txtRespRecept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:hint="RÉPONSE"
+                    android:inputType="text"
+                    android:padding="5dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.cergi.ruralbanking.PercentLinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnValiderRecept"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_green"
+                    android:text="Valider"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="25%" />
+
+                <Button
+                    android:id="@+id/btnAnnulerRecept"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/button_red"
+                    android:text="Annuler"
+                    android:textColor="#ffffff"
+                    app:layout_widthPercent="25%" />
+            </com.cergi.ruralbanking.PercentLinearLayout>
+        </com.cergi.ruralbanking.PercentLinearLayout>
+
+    </ScrollView>
+</android.support.percent.PercentRelativeLayout>
